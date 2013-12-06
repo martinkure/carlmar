@@ -14,6 +14,15 @@
 <script src="js/tooltip.js"></script>
 <script src="js/popover.js"></script>
 
+<script>
+$(".tester").click(function(e){
+  e.preventDefault();
+  $.get("product.php",function(data,status){
+    $(".featuredbackground").html(data);
+  });
+});
+</script>
+
 </body>
 
 </html> 
