@@ -20,7 +20,12 @@ $(".tester").click(function(e){
   $.get("product.php",function(data,status){
     $(".featuredbackground").html(data);
   });
+  var abc1 =$(this).parent().find(".arrow");
+	var abc = $(".arrow").not(abc1);
+	$(this).parent().find(".arrow").fadeIn(1000);
+	$(abc).fadeOut(500);
 });
+
 </script>
 
 </body>

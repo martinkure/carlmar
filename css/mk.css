@@ -1,3 +1,49 @@
 .featuredbackground{
 	background-color:purple;
 }
+
+.box1{
+	width:130px;
+	height:100px;
+	background-color:blue;
+}
+.box2{
+	width:130px;
+	height:100px;
+	background-color:blue;
+}
+
+.outer1{
+	width:130px;
+	float:left;
+}
+.outer2{
+	width:130px;
+	float:right;
+}
+
+.active {
+
+	
+}
+
+.arrow {
+
+}
+
+.gone{
+	display:none;
+
+}
+
+a {
+   outline: 0;
+}
+
+img {
+	outline:0;
+}
+
+a:hover, a:active, a:focus {
+  outline:0;
+}
