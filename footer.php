@@ -17,13 +17,19 @@
 <script>
 $(".tester").click(function(e){
   e.preventDefault();
-  $.get("product.php",function(data,status){
+  var getUrl;
+  if($(this).offset().left === $(".tester1").offset().left){
+	var getUrl = "product.php";	
+  } else {
+	var getUrl = "vip.php";
+  }
+  $.get(getUrl,function(data,status){
     $(".featuredbackground").html(data);
   });
   var abc1 =$(this).parent().find(".arrow");
 	var abc = $(".arrow").not(abc1);
 	$(this).parent().find(".arrow").fadeIn(1000);
-	$(abc).fadeOut(500);
+	$(abc).fadeOut(0);
 });
 
 </script>
