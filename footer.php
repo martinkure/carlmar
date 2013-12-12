@@ -35,6 +35,7 @@ of the printing and typesetting industry. Lorem Ipsum has been the industry's st
 <script src="js/popover.js"></script> 
 <script src="js/jquery.scrollTo.js"></script>
 <script src="js/newslider.js"></script>
+<script src="js/jquery.isotope.js"></script>
 
 <!--<script src="js/jquery.slideme-1.19.69.js"></script> -->
 
@@ -143,6 +144,51 @@ $(window).ready(function(){
 });
 
 $('.full-width').fullWidth();
+
+//isotope product arrangement
+
+$('#container').isotope({
+  // options
+  itemSelector : '.item',
+  layoutMode : 'fitRows'
+});
+
+//$('#all').click(function(){
+//$('#container').isotope({ filter: '.item' });
+//});
+//$('#grey').click(function(){
+//$('#container').isotope({ filter: '.grey' });
+//});
+
+// cache container
+var $container = $('#container');
+// initialize isotope
+$container.isotope({
+  // options...
+});
+
+$('#acc').click(function(){
+// filter items when filter link is clicked
+$('.acc').removeClass("inactive");
+$(".menu").not(".acc").removeClass("active").addClass("inactive");
+});
+$('#pedal').click(function(){
+// filter items when filter link is clicked
+$('.pedal').removeClass("inactive");
+$(".menu").not(".pedal").removeClass("active").addClass("inactive");
+});
+$('#amp').click(function(){
+// filter items when filter link is clicked
+$('.amp').removeClass("inactive");
+$(".menu").not(".amp").removeClass("active").addClass("inactive");
+});
+    // Animation complete.	
+$('#filters a').click(function(){
+  var selector = $(this).attr('data-filter');
+  $container.isotope({ filter: selector });
+  return false;
+  
+  });
 
 </script>
 

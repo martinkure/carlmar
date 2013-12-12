@@ -9,6 +9,7 @@
 	<link rel="stylesheet" type="text/css" href="css/stefan.css" />
 	<link rel="stylesheet" type="text/css" href="css/mk.css" />
 	<link rel="stylesheet" type="text/css" href="css/newslider.css" />
+	<link rel="stylesheet" type="text/css" href="css/style.css" />
 	<!--<link rel="stylesheet" type="text/css" href="css/slideme.css" /> -->
 
 </head>
@@ -31,7 +32,7 @@
 		  <!-- Collect the nav links, forms, and other content for toggling -->
 			  <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 				<ul class="nav navbar-nav navbar-right">
-				  <li><a href="#">Link</a></li>
+				  <li><a href="about.php">About</a></li>
 				  <li><a href="#">Link</a></li>
 				  <li><a href="#">Link</a></li>
 				  <li><a href="#">Link</a></li>
