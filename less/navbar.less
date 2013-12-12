@@ -33,6 +33,7 @@
 
   @media (min-width: @grid-float-breakpoint) {
     float: left;
+    width:100%;
   }
 }
 
@@ -208,8 +209,8 @@
   margin: (@navbar-padding-vertical / 2) -@navbar-padding-horizontal;
 
   > li > a {
-    padding-top:    10px;
-    padding-bottom: 10px;
+    padding-top:    5px;
+    padding-bottom: 5px;
     line-height: @line-height-computed;
   }
 
@@ -245,8 +246,8 @@
     > li {
       float: left;
       > a {
-        padding-top:    @navbar-padding-vertical;
-        padding-bottom: @navbar-padding-vertical;
+        margin-top:    @navbar-padding-vertical;
+       // padding-bottom: @navbar-padding-vertical;
       }
     }
 
@@ -371,40 +372,49 @@
 // Alternate navbars
 // --------------------------------------------------
 
-// Default navbar
+// navbar color changed
 .navbar-default {
-  background-color: @navbar-default-bg;
-  border-color: @navbar-default-border;
+  background-color: #000000;
+  opacity:0.6;
+  transition: all 1s ease;
+-webkit-transition: all 1s ease; /* Safari */
 
   .navbar-brand {
     color: @navbar-default-brand-color;
     &:hover,
     &:focus {
-      color: @navbar-default-brand-hover-color;
-      background-color: @navbar-default-brand-hover-bg;
+      color: @carlmartin-purple;
+
     }
   }
+
 
   .navbar-text {
     color: @navbar-default-color;
   }
 
+//changed color to white
   .navbar-nav {
     > li > a {
-      color: @navbar-default-link-color;
+      color: #ffffff;
+      border-bottom:1px solid #ffffff;
+      border-top:1px solid #ffffff;
+      margin-left:17px;
+      margin-right:5px;
+      background-clip:content-box;
 
       &:hover,
       &:focus {
-        color: @navbar-default-link-hover-color;
-        background-color: @navbar-default-link-hover-bg;
+        color: @carlmartin-purple;
+        border-bottom:2px solid @carlmartin-purple;
       }
     }
     > .active > a {
       &,
       &:hover,
       &:focus {
-        color: @navbar-default-link-active-color;
-        background-color: @navbar-default-link-active-bg;
+        color: @carlmartin-purple;
+        border-bottom:2px solid @carlmartin-purple;
       }
     }
     > .disabled > a {
@@ -500,8 +510,7 @@
     color: @navbar-inverse-brand-color;
     &:hover,
     &:focus {
-      color: @navbar-inverse-brand-hover-color;
-      background-color: @navbar-inverse-brand-hover-bg;
+      color: @carlmartin-purple;
     }
   }
 
@@ -515,16 +524,14 @@
 
       &:hover,
       &:focus {
-        color: @navbar-inverse-link-hover-color;
-        background-color: @navbar-inverse-link-hover-bg;
+        color: @carlmartin-purple;
       }
     }
     > .active > a {
       &,
       &:hover,
       &:focus {
-        color: @navbar-inverse-link-active-color;
-        background-color: @navbar-inverse-link-active-bg;
+        color: @carlmartin-purple;
       }
     }
     > .disabled > a {
@@ -603,9 +610,9 @@
   }
 
   .navbar-link {
-    color: @navbar-inverse-link-color;
+    color: @carlmartin-purple;
     &:hover {
-      color: @navbar-inverse-link-hover-color;
+      color: @carlmartin-purple;
     }
   }
 

@@ -11,7 +11,7 @@ main,
 nav,
 section,
 summary {
-  display: block; 
+  display: block;
 }
 audio,
 canvas,
@@ -38,7 +38,8 @@ a {
   background: transparent;
 }
 a:active,
-a:hover a:focus {
+a:hover,
+a:focus {
   outline: 0;
 }
 h1 {
@@ -321,6 +322,44 @@ hr {
   overflow: hidden;
   clip: rect(0, 0, 0, 0);
   border: 0;
+}
+.centerheader {
+  text-align: center;
+}
+.frontendimg {
+  padding: 0px !important;
+}
+.arrow {
+  display: block;
+  margin: auto;
+}
+.vip-headline {
+  color: #917aaa;
+  border-top: 1px solid #917aaa;
+  border-bottom: 1px solid #917aaa;
+  display: inline-block;
+}
+.teamheadline {
+  margin-top: 20%;
+  margin-left: 10%;
+}
+.teamtext {
+  margin: 5px 10%;
+}
+.teambutton {
+  margin: 5% 10%;
+}
+footer {
+  background-color: #000000;
+}
+footer h3 {
+  color: #a2a2a2;
+}
+footer p {
+  color: #a2a2a2;
+}
+.footerFirstContent {
+  margin-left: 15px;
 }
 h1,
 h2,
@@ -2096,8 +2135,8 @@ fieldset[disabled] .btn-danger.active {
 }
 .btn-success {
   color: #ffffff;
-  background-color: #5cb85c;
-  border-color: #4cae4c;
+  background-color: #917aaa;
+  border-color: #846aa0;
 }
 .btn-success:hover,
 .btn-success:focus,
@@ -2105,8 +2144,8 @@ fieldset[disabled] .btn-danger.active {
 .btn-success.active,
 .open .dropdown-toggle.btn-success {
   color: #ffffff;
-  background-color: #47a447;
-  border-color: #398439;
+  background-color: #7c6299;
+  border-color: #66507d;
 }
 .btn-success:active,
 .btn-success.active,
@@ -2128,11 +2167,11 @@ fieldset[disabled] .btn-success:active,
 .btn-success.disabled.active,
 .btn-success[disabled].active,
 fieldset[disabled] .btn-success.active {
-  background-color: #5cb85c;
-  border-color: #4cae4c;
+  background-color: #917aaa;
+  border-color: #846aa0;
 }
 .btn-success .badge {
-  color: #5cb85c;
+  color: #917aaa;
   background-color: #fff;
 }
 .btn-info {
@@ -3388,7 +3427,6 @@ textarea.input-group-sm > .input-group-btn > .btn {
 .nav > li > a:hover,
 .nav > li > a:focus {
   text-decoration: none;
-  background-color: #eeeeee;
 }
 .nav > li.disabled > a {
   color: #999999;
@@ -3609,6 +3647,7 @@ textarea.input-group-sm > .input-group-btn > .btn {
 @media (min-width: 768px) {
   .navbar-header {
     float: left;
+    width: 100%;
   }
 }
 .navbar-collapse {
@@ -3749,8 +3788,8 @@ textarea.input-group-sm > .input-group-btn > .btn {
   margin: 7.5px -15px;
 }
 .navbar-nav > li > a {
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
   line-height: 20px;
 }
 @media (max-width: 767px) {
@@ -3784,8 +3823,7 @@ textarea.input-group-sm > .input-group-btn > .btn {
     float: left;
   }
   .navbar-nav > li > a {
-    padding-top: 15px;
-    padding-bottom: 15px;
+    margin-top: 15px;
   }
   .navbar-nav.navbar-right:last-child {
     margin-right: -15px;
@@ -3896,33 +3934,41 @@ textarea.input-group-sm > .input-group-btn > .btn {
   }
 }
 .navbar-default {
-  background-color: #f8f8f8;
-  border-color: #e7e7e7;
+  background-color: #000000;
+  opacity: 0.6;
+  transition: all 1s ease;
+  -webkit-transition: all 1s ease;
+  /* Safari */
+
 }
 .navbar-default .navbar-brand {
   color: #777777;
 }
 .navbar-default .navbar-brand:hover,
 .navbar-default .navbar-brand:focus {
-  color: #5e5e5e;
-  background-color: transparent;
+  color: #917aaa;
 }
 .navbar-default .navbar-text {
   color: #777777;
 }
 .navbar-default .navbar-nav > li > a {
-  color: #777777;
+  color: #ffffff;
+  border-bottom: 1px solid #ffffff;
+  border-top: 1px solid #ffffff;
+  margin-left: 17px;
+  margin-right: 5px;
+  background-clip: content-box;
 }
 .navbar-default .navbar-nav > li > a:hover,
 .navbar-default .navbar-nav > li > a:focus {
-  color: #333333;
-  background-color: transparent;
+  color: #917aaa;
+  border-bottom: 2px solid #917aaa;
 }
 .navbar-default .navbar-nav > .active > a,
 .navbar-default .navbar-nav > .active > a:hover,
 .navbar-default .navbar-nav > .active > a:focus {
-  color: #555555;
-  background-color: #e7e7e7;
+  color: #917aaa;
+  border-bottom: 2px solid #917aaa;
 }
 .navbar-default .navbar-nav > .disabled > a,
 .navbar-default .navbar-nav > .disabled > a:hover,
@@ -3987,8 +4033,7 @@ textarea.input-group-sm > .input-group-btn > .btn {
 }
 .navbar-inverse .navbar-brand:hover,
 .navbar-inverse .navbar-brand:focus {
-  color: #ffffff;
-  background-color: transparent;
+  color: #917aaa;
 }
 .navbar-inverse .navbar-text {
   color: #999999;
@@ -3998,14 +4043,12 @@ textarea.input-group-sm > .input-group-btn > .btn {
 }
 .navbar-inverse .navbar-nav > li > a:hover,
 .navbar-inverse .navbar-nav > li > a:focus {
-  color: #ffffff;
-  background-color: transparent;
+  color: #917aaa;
 }
 .navbar-inverse .navbar-nav > .active > a,
 .navbar-inverse .navbar-nav > .active > a:hover,
 .navbar-inverse .navbar-nav > .active > a:focus {
-  color: #ffffff;
-  background-color: #080808;
+  color: #917aaa;
 }
 .navbar-inverse .navbar-nav > .disabled > a,
 .navbar-inverse .navbar-nav > .disabled > a:hover,
@@ -4062,10 +4105,10 @@ textarea.input-group-sm > .input-group-btn > .btn {
   }
 }
 .navbar-inverse .navbar-link {
-  color: #999999;
+  color: #917aaa;
 }
 .navbar-inverse .navbar-link:hover {
-  color: #ffffff;
+  color: #917aaa;
 }
 .breadcrumb {
   padding: 8px 15px;
@@ -4269,11 +4312,11 @@ textarea.input-group-sm > .input-group-btn > .btn {
   background-color: #3071a9;
 }
 .label-success {
-  background-color: #5cb85c;
+  background-color: #917aaa;
 }
 .label-success[href]:hover,
 .label-success[href]:focus {
-  background-color: #449d44;
+  background-color: #775e93;
 }
 .label-info {
   background-color: #5bc0de;
@@ -4518,7 +4561,7 @@ a.thumbnail.active {
   animation: progress-bar-stripes 2s linear infinite;
 }
 .progress-bar-success {
-  background-color: #5cb85c;
+  background-color: #917aaa;
 }
 .progress-striped .progress-bar-success {
   background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
@@ -5403,8 +5446,8 @@ button.close {
 }
 .carousel-caption {
   position: absolute;
-  left: 15%;
-  right: 15%;
+  top: 30%;
+  right: 1%;
   bottom: 20px;
   z-index: 10;
   padding-top: 20px;
@@ -5428,8 +5471,6 @@ button.close {
     font-size: 30px;
   }
   .carousel-caption {
-    left: 20%;
-    right: 20%;
     padding-bottom: 30px;
   }
   .carousel-indicators {
