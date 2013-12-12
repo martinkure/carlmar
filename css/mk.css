@@ -58,17 +58,74 @@ html{
 	background-color:#ffffff;
 }
 
-
-.aboutmenu {
-	border-bottom: 1px solid #000000;
-	border-top: 1px solid #000000;
-    color: #000000;
-}
-
 .nav-center{
 	margin:auto;
 	float:none;
-	width:20%;
+	width:60%;
 }
 
+.whiteback{
+	background-color:#ffffff;
+}
+
+.headerline{
+	border-top:2px solid #000000;
+}
+
+.rightMenu{
+	float:right !important;
+}
+
+#aboutTop{
+	background-color:#707070;
+}
+
+.topBannerAbout h2{
+	font-size:40px;
+	color:#ffffff;
+	padding-top:20%;
+	padding-left:10%;
+}
+
+.topBannerAbout h4{
+	font-size:25px;
+	color:#ffffff;
+	padding-top:6%;
+	padding-left:10%;
+}
+
+.aboutVisionArea{
+	background-color:#efefef;
+}
+
+.aboutVisionArea .firsth1 {
+	font-size:40px;
+	padding-top:3%;
+	padding-left:10%;
+}
+
+
+.aboutVisionArea .nexth1 {
+	font-size:40px;
+	padding-left:10%;
+}
+
+.aboutVisionArea h4{
+	font-size:18px;
+	padding-top:6%;
+	padding-left:10%;
+}
+
+.inline-text{
+	font-size:20px;
+}
+
+.teampart h2 {
+	margin:30px;
+	float:left;
+}
+
+.clear{
+	clear:both;
+}
 

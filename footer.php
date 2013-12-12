@@ -12,8 +12,8 @@ of the printing and typesetting industry. Lorem Ipsum has been the industry's st
 
 		</article>
 		<article class="col-lg-3">
-		<!--
-			<iframe width="100%" height="95%" style="padding:5px;" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=da&amp;q=R%C3%A5dmandsvej+24,+Gren%C3%A5,+Danmark&amp;oq=Raadmandsvej+24&amp;sll=37.0625,-95.677068&amp;sspn=41.818029,86.572266&amp;ie=UTF8&amp;hq=&amp;hnear=R%C3%A5dmandsvej+24,+8500+Gren%C3%A5,+Danmark&amp;t=m&amp;z=14&amp;ll=56.398883,10.87333&amp;output=embed"></iframe> -->
+
+			<iframe width="100%" height="95%" style="padding:5px;" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=da&amp;q=R%C3%A5dmandsvej+24,+Gren%C3%A5,+Danmark&amp;oq=Raadmandsvej+24&amp;sll=37.0625,-95.677068&amp;sspn=41.818029,86.572266&amp;ie=UTF8&amp;hq=&amp;hnear=R%C3%A5dmandsvej+24,+8500+Gren%C3%A5,+Danmark&amp;t=m&amp;z=14&amp;ll=56.398883,10.87333&amp;output=embed"></iframe> 
 		</article>
 		<article class="col-lg-2">
 			<img class="img-responsive" src="img/social.png" alt="socials">
@@ -36,6 +36,7 @@ of the printing and typesetting industry. Lorem Ipsum has been the industry's st
 <script src="js/jquery.scrollTo.js"></script>
 <script src="js/newslider.js"></script>
 <script src="js/jquery.isotope.js"></script>
+<script type="text/javascript" src="js/instafeed.js"></script>
 
 <!--<script src="js/jquery.slideme-1.19.69.js"></script> -->
 
@@ -102,7 +103,7 @@ $("#controler").click(function(){
 	if(countSection >1){
 		$(".navbar-default").css("opacity","1");
 	} else{
-		$(".navbar-default").css("opacity","0.6");
+		$(".navbar-default").css("opacity","0.8");
 	}
 });
 
@@ -153,13 +154,6 @@ $('#container').isotope({
   layoutMode : 'fitRows'
 });
 
-//$('#all').click(function(){
-//$('#container').isotope({ filter: '.item' });
-//});
-//$('#grey').click(function(){
-//$('#container').isotope({ filter: '.grey' });
-//});
-
 // cache container
 var $container = $('#container');
 // initialize isotope
@@ -189,6 +183,15 @@ $('#filters a').click(function(){
   return false;
   
   });
+  	
+	 var feed = new Instafeed({
+        get: 'tagged',
+        tagName: 'northside',
+        clientId: '6bff3672c9b343c587f108f47afd756e',
+		limit:6,
+		template: '<a class="col-xs-12 col-md-6 col-lg-2 animation" href="{{link}}"><img class="imagesInst" src="{{image}}" /><p class="caption">{{caption}} &nbsp;{{likes}} likes</p> </a> '
+    });
+    feed.run();
 
 </script>
 

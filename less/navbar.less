@@ -374,7 +374,7 @@
 
 // navbar color changed
 .navbar-default {
-  background-color: #000000;
+  background-color: @carlmartin-purple;
   opacity:0.6;
   transition: all 1s ease;
 -webkit-transition: all 1s ease; /* Safari */
@@ -415,6 +415,73 @@
       &:focus {
         color: @carlmartin-purple;
         border-bottom:2px solid @carlmartin-purple;
+      }
+    }
+    > .disabled > a {
+      &,
+      &:hover,
+      &:focus {
+        color: @navbar-default-link-disabled-color;
+        background-color: @navbar-default-link-disabled-bg;
+      }
+    }
+  }
+  // changes for menu in product sub nav Se her Stefan
+    .aboutmenu {
+    > li > a {
+      color: #000000;
+      border-bottom:1px solid #000000;
+      border-top:1px solid #000000;
+      margin-left:17px;
+      margin-right:5px;
+      background-clip:content-box;
+
+      &:hover,
+      &:focus {
+        color: #000000;
+        border-bottom:1px solid #000000;
+        border-top:1px solid #000000;
+      }
+    }
+    > .active > a {
+      &,
+      &:hover,
+      &:focus {
+        color: #000000;
+        border-bottom:1px solid #000000;
+        border-top:1px solid #000000;
+      }
+    }
+    > .disabled > a {
+      &,
+      &:hover,
+      &:focus {
+        color: @navbar-default-link-disabled-color;
+        background-color: @navbar-default-link-disabled-bg;
+      }
+    }
+  }
+
+.aboutmenuSub {
+    > li > a {
+      color: #000000;
+      border-bottom:1px solid #000000;
+      margin-left:17px;
+      margin-right:5px;
+      background-clip:content-box;
+
+      &:hover,
+      &:focus {
+        color: #000000;
+        border-bottom:1px solid #000000;
+      }
+    }
+    > .active > a {
+      &,
+      &:hover,
+      &:focus {
+        color: #000000;
+        border-bottom:1px solid #000000;
       }
     }
     > .disabled > a {

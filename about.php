@@ -2,92 +2,65 @@
 	include('header.php');
 ?>
 
-<section class="row" data-section="1" id="slides">
-
-<nav class="navbar navbar-default topSection"  role="navigation">
-  <!-- Brand and toggle get grouped for better mobile display -->
- 
-
-  <!-- Collect the nav links, forms, and other content for toggling -->
-
-    <ul class="nav navbar-nav nav-center">
-      <li class="active"><a class="aboutmenu" id="pedal" href="#">Pedal</a></li>
-      <li><a class="aboutmenu" id="acc" href="#">Acc</a></li>
-	  <li><a class="aboutmenu" id="amp" href="#">Amp</a></li>
-      
-    </ul>
-</nav>
-
-<nav id="subnav">
-<section class="pedal active menu">
-<ul id="filters">
-  <li><a href="#" data-filter="*">show all</a></li>
-  <li><a href="#" data-filter=".grey">grey</a></li>
-  <li><a href="#" data-filter=".yellow">yellow</a></li>
-  <li><a href="#" data-filter=".purple">purple moon</a></li>
-</ul>
+<section class="row slider1" data-section="1" id="aboutTop">
+	<img class="rightMenu img-responsive topSection" src="img/aboutTeam.png">
+	<article class="col-lg-5 topBannerAbout">
+		<h2> Meet the team </h2>
+		<h4> We create the sounds, that we can hear in our head </h4>
+	</article>
 </section>
-<section class="amp inactive menu">
-<ul id="filters">
-  <li><a href="#" data-filter="*">show all amp </a></li>
-  <li><a href="#" data-filter=".grey">grey</a></li>
-  <li><a href="#" data-filter=".yellow">yellow</a></li>
-  <li><a href="#" data-filter=".purple">purple moon</a></li>
-</ul>
-</section>
-<section class="acc inactive menu">
-<ul id="filters">
-  <li><a href="#" data-filter="*">show all acc</a></li>
-  <li><a href="#" data-filter=".grey">grey acc</a></li>
-  <li><a href="#" data-filter=".yellow">yellow acc</a></li>
-  <li><a href="#" data-filter=".purple">purple moon acc</a></li>
-</ul>
-</section>
-</nav>
-
-
-<div id="container">
- 
-  <div class="item purple"><img src="img/purple.png"/></div>
-   <div class="item grey" ><img src="img/grey.png"/></div>
-  <div class="item yellow"><img src="img/small.png"/></div>
-    <div class="item purple"><img src="img/purple.png"/></div>
-   <div class="item grey" ><img src="img/grey.png"/></div>
-  <div class="item yellow"><img src="img/small.png"/></div>
-    <div class="item purple"><img src="img/purple.png"/></div>
-   <div class="item grey" ><img src="img/grey.png"/></div>
-  <div class="item yellow"><img src="img/small.png"/></div>
-   <div class="item purple"><img src="img/purple.png"/></div>
-   <div class="item grey" ><img src="img/grey.png"/></div>
-  <div class="item yellow"><img src="img/small.png"/></div>
-    <div class="item purple"><img src="img/purple.png"/></div>
-   <div class="item grey" ><img src="img/grey.png"/></div>
-  <div class="item yellow"><img src="img/small.png"/></div>
-    <div class="item purple"><img src="img/purple.png"/></div>
-   <div class="item grey" ><img src="img/grey.png"/></div>
-  <div class="item yellow"><img src="img/small.png"/></div>
-   <div class="item purple"><img src="img/purple.png"/></div>
-   <div class="item grey" ><img src="img/grey.png"/></div>
-  <div class="item yellow"><img src="img/small.png"/></div>
-    <div class="item purple"><img src="img/purple.png"/></div>
-   <div class="item grey" ><img src="img/grey.png"/></div>
-  <div class="item yellow"><img src="img/small.png"/></div>
-    <div class="item purple"><img src="img/purple.png"/></div>
-   <div class="item grey" ><img src="img/grey.png"/></div>
-  <div class="item yellow"><img src="img/small.png"/></div>
-
-</article>
-
-
-</section>
-<section class="row outerbox" data-section="2">
+<section class="row outerbox aboutVisionArea" data-section="2">
+	<article class="col-lg-6">
+		<h2 class="firsth1"> Carl Martin's story </h2>
+		<h4> This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. </h4>
+	</article>
+	
+	<article class="col-lg-6">
+		<h2 class="firsth1"> Mission 
+		<span class="inline-text"> To constantly raise the bar within sound perception </span><br></h2>
+		<h2 class="nexth1"> Vision 
+		<span class="inline-text"> To constantly raise the bar within sound perception</span><br></h2>
+		 <h2 class="nexth1">Core values 
+		<span class="inline-text"> To constantly raise the bar within sound perception </span></h2>
+	
+	</article>
+	<article class="col-lg-12">
+		<h2> Who are we </h2>
+		<article class="col-lg-2">
+			<img src="img/soren.png" alt="soren" class="img-responsive">
+			<p> Søren Jongsberg </p>
+		</article>
+		<article class="col-lg-2">
+			<img src="img/soren.png" alt="soren" class="img-responsive">
+			<p> Søren Jongsberg </p>
+		</article>
+		<article class="col-lg-2">
+			<img src="img/soren.png" alt="soren" class="img-responsive">
+			<p> Søren Jongsberg </p>
+		</article>
+		<article class="col-lg-2">
+			<img src="img/soren.png" alt="soren" class="img-responsive">
+			<p> Søren Jongsberg </p>
+		</article>
+		<article class="col-lg-2">
+			<img src="img/soren.png" alt="soren" class="img-responsive">
+			<p> Søren Jongsberg </p>
+		</article>
+		<article class="col-lg-2">
+			<img src="img/soren.png" alt="soren" class="img-responsive">
+			<p> Søren Jongsberg </p>
+		</article>
+	</article>
 	
 </section>
 
 
 <section class="row teampart" data-section="3">
 	
-	
+	<h2> #Carlmartinfx </h2>
+	<img src="img/insta.png" alt="instagram">
+	<div class="clear"></div>
+	<div id="instafeed"></div>
 </section>
 
 

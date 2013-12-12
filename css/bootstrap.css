@@ -3934,7 +3934,7 @@ textarea.input-group-sm > .input-group-btn > .btn {
   }
 }
 .navbar-default {
-  background-color: #000000;
+  background-color: #917aaa;
   opacity: 0.6;
   transition: all 1s ease;
   -webkit-transition: all 1s ease;
@@ -3973,6 +3973,57 @@ textarea.input-group-sm > .input-group-btn > .btn {
 .navbar-default .navbar-nav > .disabled > a,
 .navbar-default .navbar-nav > .disabled > a:hover,
 .navbar-default .navbar-nav > .disabled > a:focus {
+  color: #cccccc;
+  background-color: transparent;
+}
+.navbar-default .aboutmenu > li > a {
+  color: #000000;
+  border-bottom: 1px solid #000000;
+  border-top: 1px solid #000000;
+  margin-left: 17px;
+  margin-right: 5px;
+  background-clip: content-box;
+}
+.navbar-default .aboutmenu > li > a:hover,
+.navbar-default .aboutmenu > li > a:focus {
+  color: #000000;
+  border-bottom: 1px solid #000000;
+  border-top: 1px solid #000000;
+}
+.navbar-default .aboutmenu > .active > a,
+.navbar-default .aboutmenu > .active > a:hover,
+.navbar-default .aboutmenu > .active > a:focus {
+  color: #000000;
+  border-bottom: 1px solid #000000;
+  border-top: 1px solid #000000;
+}
+.navbar-default .aboutmenu > .disabled > a,
+.navbar-default .aboutmenu > .disabled > a:hover,
+.navbar-default .aboutmenu > .disabled > a:focus {
+  color: #cccccc;
+  background-color: transparent;
+}
+.navbar-default .aboutmenuSub > li > a {
+  color: #000000;
+  border-bottom: 1px solid #000000;
+  margin-left: 17px;
+  margin-right: 5px;
+  background-clip: content-box;
+}
+.navbar-default .aboutmenuSub > li > a:hover,
+.navbar-default .aboutmenuSub > li > a:focus {
+  color: #000000;
+  border-bottom: 1px solid #000000;
+}
+.navbar-default .aboutmenuSub > .active > a,
+.navbar-default .aboutmenuSub > .active > a:hover,
+.navbar-default .aboutmenuSub > .active > a:focus {
+  color: #000000;
+  border-bottom: 1px solid #000000;
+}
+.navbar-default .aboutmenuSub > .disabled > a,
+.navbar-default .aboutmenuSub > .disabled > a:hover,
+.navbar-default .aboutmenuSub > .disabled > a:focus {
   color: #cccccc;
   background-color: transparent;
 }
