@@ -32,11 +32,12 @@ of the printing and typesetting industry. Lorem Ipsum has been the industry's st
 <script src="js/tab.js"></script> 
 <script src="js/transition.js"></script> 
 <script src="js/tooltip.js"></script>
-<script src="js/popover.js"></script> 
+<script src="js/popover.js"></script> <!-- i brug -->
 <script src="js/jquery.scrollTo.js"></script>
 <script src="js/newslider.js"></script>
-<script src="js/jquery.isotope.js"></script>
-<script type="text/javascript" src="js/instafeed.js"></script>
+<script src="js/jquery.isotope.js"></script> <!-- i brug -->
+<script type="text/javascript" src="js/instafeed.js"></script> <!-- i brug -->
+<script type="text/javascript" src="js/productslideshow.js"></script> <!-- i brug -->
 
 <!--<script src="js/jquery.slideme-1.19.69.js"></script> -->
 
@@ -107,17 +108,29 @@ $("#controler").click(function(){
 	}
 });
 
-//set height for slideshow
+//set height for sections to make sure, they are always full screen height
 $(document).ready(function(){
 	if($(window).width()>=1140){
 	var abc = $(window).height();
-	$(".slider1, .outerbox").height(abc);
+	$(".slider1, .outerbox, .soundcloud").height(abc);
 	}
 	//TODO: hvis skærmstørrelsen ændres eller skærmstørrelsen ikke er over 1140, så skal højden ikke sættes
 	//TODO: skal kun virke på store skærme - de andre skal tilpasses individuelt
 });
 
+//making sure, that footer is in screen too
+$(document).ready(function(){
+	if($(window).width()>=1140){
+	var abc = $(window).height();
+	var abc = abc - $("footer").height();
+	console.log("abc er: " + abc)
+	$(".soundcloud").height(abc);
+	}
+	//TODO: hvis skærmstørrelsen ændres eller skærmstørrelsen ikke er over 1140, så skal højden ikke sættes
+	//TODO: skal kun virke på store skærme - de andre skal tilpasses individuelt
+});
 
+//Make topnav smaller on scroll
 $(window).scroll(function(){
 	var scrollTop     = $(window).scrollTop(),
         elementOffset = $('.outerbox').offset().top;
@@ -130,6 +143,7 @@ $(window).scroll(function(){
 	
 });
 
+//prevent scroll on certain elements
 $( '#slides, .outerbox, .teampart, footer' ).bind( 'mousewheel DOMMouseScroll', function ( e ) {
     var e0 = e.originalEvent,
         delta = e0.wheelDelta || -e0.detail;
@@ -144,9 +158,10 @@ $(window).ready(function(){
 	$(".leftFrontendimg, .rightFrontendimg").height(abc);
 });
 
+//starting slideshow 
 $('.full-width').fullWidth();
 
-//isotope product arrangement
+//isotope product code product.php
 
 $('#container').isotope({
   // options
@@ -183,7 +198,7 @@ $('#filters a').click(function(){
   return false;
   
   });
-  	
+  	//instagram feed about.php
 	 var feed = new Instafeed({
         get: 'tagged',
         tagName: 'northside',
@@ -192,6 +207,27 @@ $('#filters a').click(function(){
 		template: '<a class="col-xs-12 col-md-6 col-lg-2 animation" href="{{link}}"><img class="imagesInst" src="{{image}}" /><p class="caption">{{caption}} &nbsp;{{likes}} likes</p> </a> '
     });
     feed.run();
+	
+	//Single product slideshow
+	
+	$(".rslides").responsiveSlides({
+  auto: true,             // Boolean: Animate automatically, true or false
+  speed: 500,            // Integer: Speed of the transition, in milliseconds
+  timeout: 4000,          // Integer: Time between slide transitions, in milliseconds
+  pager: false,           // Boolean: Show pager, true or false
+  nav: false,             // Boolean: Show navigation, true or false
+  random: false,          // Boolean: Randomize the order of the slides, true or false
+  pause: false,           // Boolean: Pause on hover, true or false
+  pauseControls: true,    // Boolean: Pause when hovering controls, true or false
+  prevText: "Previous",   // String: Text for the "previous" button
+  nextText: "Next",       // String: Text for the "next" button
+  maxwidth: "",           // Integer: Max-width of the slideshow, in pixels
+  navContainer: "",       // Selector: Where controls should be appended to, default is after the 'ul'
+  manualControls: "",     // Selector: Declare custom pager navigation
+  namespace: "rslides",   // String: Change the default namespace used
+  before: function(){},   // Function: Before callback
+  after: function(){}     // Function: After callback
+});
 
 </script>
 

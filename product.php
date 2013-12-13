@@ -80,48 +80,38 @@
 
 <div id="container">
  
-  <div class="item purple"><img src="img/purple.png"/></div>
-   <div class="item grey" ><img src="img/grey.png"/></div>
-  <div class="item yellow"><img src="img/small.png"/></div>
-    <div class="item purple"><img src="img/purple.png"/></div>
-   <div class="item grey" ><img src="img/grey.png"/></div>
-  <div class="item yellow"><img src="img/small.png"/></div>
-    <div class="item purple"><img src="img/purple.png"/></div>
-   <div class="item grey" ><img src="img/grey.png"/></div>
-  <div class="item yellow"><img src="img/small.png"/></div>
-   <div class="item purple"><img src="img/purple.png"/></div>
-   <div class="item grey" ><img src="img/grey.png"/></div>
-  <div class="item yellow"><img src="img/small.png"/></div>
-    <div class="item purple"><img src="img/purple.png"/></div>
-   <div class="item grey" ><img src="img/grey.png"/></div>
-  <div class="item yellow"><img src="img/small.png"/></div>
-    <div class="item purple"><img src="img/purple.png"/></div>
-   <div class="item grey" ><img src="img/grey.png"/></div>
-  <div class="item yellow"><img src="img/small.png"/></div>
-   <div class="item purple"><img src="img/purple.png"/></div>
-   <div class="item grey" ><img src="img/grey.png"/></div>
-  <div class="item yellow"><img src="img/small.png"/></div>
-    <div class="item purple"><img src="img/purple.png"/></div>
-   <div class="item grey" ><img src="img/grey.png"/></div>
-  <div class="item yellow"><img src="img/small.png"/></div>
-    <div class="item purple"><img src="img/purple.png"/></div>
-   <div class="item grey" ><img src="img/grey.png"/></div>
-  <div class="item yellow"><img src="img/small.png"/></div>
+  <a href="singleproduct.php"><div class="item purple"><img src="img/purple.png"/></div></a>
+    <a href="singleproduct.php"><div class="item grey" ><img src="img/grey.png"/></div></a>
+   <a href="singleproduct.php"><div class="item yellow"><img src="img/small.png"/></div></a>
+     <a href="singleproduct.php"><div class="item purple"><img src="img/purple.png"/></div></a>
+    <a href="singleproduct.php"><div class="item grey" ><img src="img/grey.png"/></div></a>
+   <a href="singleproduct.php"><div class="item yellow"><img src="img/small.png"/></div></a>
+     <a href="singleproduct.php"><div class="item purple"><img src="img/purple.png"/></div></a>
+    <a href="singleproduct.php"><div class="item grey" ><img src="img/grey.png"/></div></a>
+   <a href="singleproduct.php"><div class="item yellow"><img src="img/small.png"/></div></a>
+    <a href="singleproduct.php"><div class="item purple"><img src="img/purple.png"/></div></a>
+    <a href="singleproduct.php"><div class="item grey" ><img src="img/grey.png"/></div></a>
+   <a href="singleproduct.php"><div class="item yellow"><img src="img/small.png"/></div></a>
+     <a href="singleproduct.php"><div class="item purple"><img src="img/purple.png"/></div></a>
+    <a href="singleproduct.php"><div class="item grey" ><img src="img/grey.png"/></div></a>
+   <a href="singleproduct.php"><div class="item yellow"><img src="img/small.png"/></div></a>
+     <a href="singleproduct.php"><div class="item purple"><img src="img/purple.png"/></div></a>
+    <a href="singleproduct.php"><div class="item grey" ><img src="img/grey.png"/></div></a>
+   <a href="singleproduct.php"><div class="item yellow"><img src="img/small.png"/></div></a>
+    <a href="singleproduct.php"><div class="item purple"><img src="img/purple.png"/></div></a>
+    <a href="singleproduct.php"><div class="item grey" ><img src="img/grey.png"/></div></a>
+   <a href="singleproduct.php"><div class="item yellow"><img src="img/small.png"/></div></a>
+     <a href="singleproduct.php"><div class="item purple"><img src="img/purple.png"/></div></a>
+    <a href="singleproduct.php"><div class="item grey" ><img src="img/grey.png"/></div></a>
+   <a href="singleproduct.php"><div class="item yellow"><img src="img/small.png"/></div></a>
+     <a href="singleproduct.php"><div class="item purple"><img src="img/purple.png"/></div></a>
+    <a href="singleproduct.php"><div class="item grey" ><img src="img/grey.png"/></div></a>
+   <a href="singleproduct.php"><div class="item yellow"><img src="img/small.png"/></div></a>
 
 </article>
 
 
 </section>
-<section class="row outerbox" data-section="2">
-	
-</section>
-
-
-<section class="row teampart" data-section="3">
-	
-	
-</section>
-
 
 <?php
 	include('footer.php');
