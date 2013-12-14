@@ -13,4 +13,8 @@
 		  <a href="#" id="newsletterButton" class="btn btn-success newsletter">Submit</a>
 		</form>
 	</article>	
+	<article class="col-lg-6 vipBackground">
+		
+	
+	</article>
 	

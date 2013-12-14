@@ -8,12 +8,12 @@
 		<h4> The new `single channel` AC-Tone, is a smaller pedal-board friendly, single channel version of the original Pro-Series AC-Tone.  It features 3 knobs and 1 switch and has a slightly beefed up Gain section, but shares the very same tone as its big sister! </h4>
 	</article>
 	<article class="col-lg-5">
-	<iframe class="productVideo" width="700px" height="500px" src="//www.youtube.com/embed/RnsVUyQJN3g" frameborder="0" allowfullscreen></iframe>
+	<iframe class="productVideo" width="600px" height="500px" src="//www.youtube.com/embed/RnsVUyQJN3g" frameborder="0" allowfullscreen></iframe>
 	</article>
 </section>
 <section class="row outerbox singleproductMiddle" data-section="2">
 	<article class="col-lg-6">
-		<img src="img/actone.png" alt="actone product">
+		<img src="img/actone.png" alt="actone product" class="img-responsive">
 	</article>
 	
 	<article class="col-lg-6">
@@ -27,13 +27,13 @@
 		  <li><img src="img/review1.png" alt="review"></li>
 		</ul>
 	</article>
-	
-	<iframe class="soundcloudBox" width="50%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/122272486&amp;color=2d2926&amp;auto_play=false&amp;show_artwork=true"></iframe>
+
 	
 </section>
 
 
 <section class="row soundcloud" data-section="3">
+	<iframe class="soundcloudBox" width="50%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/122272486&amp;color=2d2926&amp;auto_play=false&amp;show_artwork=true"></iframe>
 
 </section>
 

@@ -15,8 +15,9 @@
 </head>
 
 <body>
-	<img id="controler" src="img/arrow.jpg">
-	<div class="row fixed">
+	<img src="img/top_arrow.png" alt="to top" class="img-responsive navigationTop">
+	<section class="container">
+	<div class="row">
 		<nav class="navbar navbar-default" role="navigation">
 		  <!-- Brand and toggle get grouped for better mobile display -->
 		  <div class="navbar-header">
@@ -26,21 +27,20 @@
 			  <span class="icon-bar"></span>
 			  <span class="icon-bar"></span>
 			</button>
-			<a class="navbar-brand" href="index.php"><img src="img/logo.png"></a>
+			<a class="navbar-brand" href="index.php"><img class="logo img-responsive" src="img/logo.png"></a>
+			</div>
 		 
 
 		  <!-- Collect the nav links, forms, and other content for toggling -->
 			  <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 				<ul class="nav navbar-nav navbar-right">
-				  <li><a href="product.php">Product</a></li>
-				  <li><a href="about.php">About</a></li>
-				  <li><a href="#">Link</a></li>
-				  <li><a href="#">Link</a></li>
-				  <li><a href="#">Link</a></li>
-				  <li class="buybutton"><a href="#"><img src="img/buy.png" alt="buy-button"></a></li>
+				  <li><a href="product.php">PRODUCTS</a></li>
+				  <li><a href="#">NEWS</a></li>
+				  <li><a href="#">SUPPORT</a></li>
+				  <li><a href="about.php">ABOUT US</a></li>  
+				  <li><a href="#">CONTACT US</a></li>
+				  <li class="buybutton"><a href="#"><img src="img/buy-button.png" alt="buy-button"></a></li>
 				</ul>
-				
-			  </div><!-- /.navbar-collapse -->
-			</div>  
+			</div><!-- /.navbar-collapse -->  
 		</nav>
 	</div>

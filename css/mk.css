@@ -34,6 +34,27 @@ html{
 	overflow-x:hidden;
 	overflow-y:scroll;
 }
+
+/* style navigation back to top button */
+.navigationTop{
+	position:fixed;
+	right:15px;
+	bottom:15px;
+	opacity:0;
+	z-index:100;
+	height:50px;
+	width:50px;
+	cursor:pointer;
+	transition: all 1s ease;
+-webkit-transition: all 1s ease; /* Safari */
+}
+
+/* style VIP-content */
+.vipBackground{
+	background-image:url("../img/vip_bg.png");
+	background-repeat:no-repeat;
+}
+
 /* buy button */
 .buybutton {
 	margin:5px 25px;
@@ -47,21 +68,16 @@ html{
 	margin-top:0px !important;
 }
 
-.rightFrontendimg{
-	overflow:hidden;
-}
-
 /* about.php */
 
 .topSection{
-	margin-top:70px;
 	background-color:#ffffff;
 }
-
+/* product menu */
 .nav-center{
 	margin:auto;
 	float:none;
-	width:60%;
+	width:75%;
 }
 
 .whiteback{
@@ -193,6 +209,10 @@ html{
 	font-size:20px;
 }
 
+.teampart {
+	margin-top:15px;
+}
+
 .teampart h2 {
 	margin:30px;
 	float:left;
@@ -202,3 +222,10 @@ html{
 	clear:both;
 }
 
+/*fix to bootstrap container */
+@media all and (max-width: 1100px){
+	.container{
+		margin:0px;
+		width:100%;
+	}
+}

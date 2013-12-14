@@ -3,10 +3,10 @@
     "use strict";
     
     $.fn.fullWidth = function(options) {
-            var slideHeight = $(window).height();
+
         var defaults = {
-            maxHeight : slideHeight,
-            minHeight : slideHeight,
+            maxHeight : 658,
+            minHeight : 450,
             delay : 5000,
             transition : 1000,
             maxFont : 36,

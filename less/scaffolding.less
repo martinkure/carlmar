@@ -20,7 +20,7 @@ html {
 }
 
 body {
-  font-family: @font-family-base;
+  font-family: helvetica, @font-family-base;
   font-size: @font-size-base;
   line-height: @line-height-base;
   color: @text-color;
@@ -118,7 +118,33 @@ hr {
   border: 0;
 }
 
+//Hide/show areas on mobile
+@media (max-width: @screen-md){
+  .mobileHidden{
+    display:none;
+  }
+}
+
+@media (min-width: @screen-md){
+  .mobileShow{
+    display:none;
+  }
+}
+
 // front-page css
+
+//slideshow nav remove
+
+.slide-nav{
+  display:none;
+}
+
+//center content position
+@media (min-width: @screen-sm-min){
+.middleContainer{
+  margin:15px 0px ;
+  }
+ } 
 
 .centerheader{
   text-align:center;  
@@ -143,6 +169,11 @@ hr {
 .teamheadline{
   margin-top:20%;
   margin-left:10%;
+}
+@media (max-width: @screen-md-min){
+  .teamheadline{
+  margin-top:10%;
+  }
 }
 
 .teamtext{

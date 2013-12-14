@@ -19,49 +19,84 @@ of the printing and typesetting industry. Lorem Ipsum has been the industry's st
 			<img class="img-responsive" src="img/social.png" alt="socials">
 		</article>
 	</footer>
-	
+	</section>
 <script src="js/jquery-1.10.2.js"></script>
 <script src="js/affix.js"></script> 
 <script src="js/alert.js"></script> 
 <script src="js/button.js"></script> 
-<script src="js/carousel.js"></script> 
-<script src="js/collapse.js"></script> 
+<script src="js/carousel.js"></script>  
 <script src="js/dropdown.js"></script> 
 <script src="js/modal.js"></script> 
 <script src="js/scrollspy.js"></script> 
 <script src="js/tab.js"></script> 
 <script src="js/transition.js"></script> 
 <script src="js/tooltip.js"></script>
+<script src="js/collapse.js"></script>
 <script src="js/popover.js"></script> <!-- i brug -->
 <script src="js/jquery.scrollTo.js"></script>
 <script src="js/newslider.js"></script>
 <script src="js/jquery.isotope.js"></script> <!-- i brug -->
 <script type="text/javascript" src="js/instafeed.js"></script> <!-- i brug -->
 <script type="text/javascript" src="js/productslideshow.js"></script> <!-- i brug -->
+<script type="text/javascript" src="js/picturefill.js"></script> <!-- i brug -->
 
 <!--<script src="js/jquery.slideme-1.19.69.js"></script> -->
 
 <script>
 
+
 //getting ajax frontpage content
 $(".tester").click(function(e){
   e.preventDefault();
-  var getUrl;
-  if($(this).offset().top === $(".tester1").offset().top){
-	getUrl = "product.php";	
-  } else if ($(this).offset().top === $(".tester2").offset().top) {
+  $(this).attr
+  if($(this).offset().left === $(".tester1").offset().left){
+  console.log("går ind i tester1");
+	getUrl = "slider.php";	
+  } else if ($(this).offset().left === $(".tester2").offset().left) {
+  console.log("går ind i tester2");
 	getUrl = "vip.php";
   } else{
+  console.log("går ind i tester3");
 	getUrl = "vip.php";
   }
+  console.log(getUrl);
   $.get(getUrl,function(data,status){
     $(".contentPhp").html(data);
-	console.log(status);
   });/*
   var abc1 =$(this).parent().find(".arrow");
 	var abc = $(".arrow").not(abc1);
 	$(this).parent().find(".arrow").css("opacity","1").fadeIn(1000).addClass("arrow");
 	$(abc).fadeOut(0);*/
+
+    $('html, body').animate({
+        scrollTop: $(".contentPhp").offset().top
+    }, 2000);
+	if(getUrl === "slider.php"){
+	setTimeout(function(){$('.carousel').carousel()},3000);
+
+	}
+
+});
+//on scroll change height of navbar and make it fixed
+$(window).scroll(function(){
+	$(".navigationTop").css("opacity","1");	
+});
+
+$(".navigationTop").click(function(){
+	 $('html, body').animate({scrollTop:0}, 'slow');
+       return false;
+});
+
+//Make pagination scroll button disappear, when on top of screen
+$(window).scroll(function(){
+	var scrollTop     = $(window).scrollTop(),
+        elementOffset = $('.navbar').offset().top;
+        distance      = (elementOffset - scrollTop);
+		console.log("distance er: " +distance);
+		if(distance >= -50){
+				 $(".navigationTop").css("opacity","0");
+		}
+	
 });
 
 //form submit
@@ -109,14 +144,20 @@ $("#controler").click(function(){
 });
 
 //set height for sections to make sure, they are always full screen height
+/*
 $(document).ready(function(){
-	if($(window).width()>=1140){
 	var abc = $(window).height();
-	$(".slider1, .outerbox, .soundcloud").height(abc);
-	}
+	$(".outerbox, .soundcloud").height(abc);
 	//TODO: hvis skærmstørrelsen ændres eller skærmstørrelsen ikke er over 1140, så skal højden ikke sættes
 	//TODO: skal kun virke på store skærme - de andre skal tilpasses individuelt
+	$(window).resize(function(){
+		$(".outerbox, .soundcloud").height(abc);
+	});
 });
+
+
+	
+
 
 //making sure, that footer is in screen too
 $(document).ready(function(){
@@ -126,24 +167,12 @@ $(document).ready(function(){
 	console.log("abc er: " + abc)
 	$(".soundcloud").height(abc);
 	}
-	//TODO: hvis skærmstørrelsen ændres eller skærmstørrelsen ikke er over 1140, så skal højden ikke sættes
-	//TODO: skal kun virke på store skærme - de andre skal tilpasses individuelt
 });
+*/
 
-//Make topnav smaller on scroll
-$(window).scroll(function(){
-	var scrollTop     = $(window).scrollTop(),
-        elementOffset = $('.outerbox').offset().top;
-        distance      = (elementOffset - scrollTop);
-		if(distance <= 100){
-			$(".navbar-header").height(40);
-		} else {
-			$(".navbar-header").height("");
-		}
-	
-});
 
 //prevent scroll on certain elements
+/*
 $( '#slides, .outerbox, .teampart, footer' ).bind( 'mousewheel DOMMouseScroll', function ( e ) {
     var e0 = e.originalEvent,
         delta = e0.wheelDelta || -e0.detail;
@@ -151,13 +180,13 @@ $( '#slides, .outerbox, .teampart, footer' ).bind( 'mousewheel DOMMouseScroll', 
     this.scrollTop += ( delta < 0 ? 1 : -1 ) * 30;
     e.preventDefault();
 });
-
+/*
 $(window).ready(function(){
 	var abc = $(window).height();
 	abc = abc -50;
 	$(".leftFrontendimg, .rightFrontendimg").height(abc);
 });
-
+*/
 //starting slideshow 
 $('.full-width').fullWidth();
 

@@ -3,10 +3,12 @@
 ?>
 
 <section class="row slider1" data-section="1" id="aboutTop">
-	<img class="rightMenu img-responsive topSection" src="img/aboutTeam.png">
 	<article class="col-lg-5 topBannerAbout">
 		<h2> Meet the team </h2>
 		<h4> We create the sounds, that we can hear in our head </h4>
+	</article>
+	<article class="col-lg-7">
+	<img class="img-responsive" src="img/aboutTeam.png">
 	</article>
 </section>
 <section class="row outerbox aboutVisionArea" data-section="2">

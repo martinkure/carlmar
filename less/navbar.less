@@ -31,7 +31,11 @@
 .navbar-header {
   .clearfix();
 
-  @media (min-width: @grid-float-breakpoint) {
+ @media (min-width: @grid-float-breakpoint) {
+    float: left;
+}
+
+  @media (max-width: @grid-float-breakpoint) {
     float: left;
     width:100%;
   }
@@ -374,10 +378,11 @@
 
 // navbar color changed
 .navbar-default {
-  background-color: @carlmartin-purple;
+  background-color: #000000;
   opacity:0.6;
   transition: all 1s ease;
 -webkit-transition: all 1s ease; /* Safari */
+//might need to be changed for tablets
 
   .navbar-brand {
     color: @navbar-default-brand-color;

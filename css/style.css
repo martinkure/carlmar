@@ -74,7 +74,7 @@ body {
 
 #container {
   padding: 5px;
-  margin: 0px 4% 20px 4%;
+  margin: 0px 14% 10% 14%;
   border-left:2px solid #000;
   border-right:2px solid #000;
 }
@@ -322,7 +322,7 @@ pre, code {
 #content code {
   font-size: 12px;
 }
-
+U
 #content pre {
   line-height: 1.6em;
 }
@@ -614,6 +614,7 @@ code .nd { color: #9FAD7E; } /* CSS pseudo selector */
 /* CSS Document */
 .inactive{
 	display:none;
+	
 }
 
 
@@ -621,3 +622,13 @@ code .nd { color: #9FAD7E; } /* CSS pseudo selector */
 .clearfix:before, .clearfix:after { content: ""; display: table; }
 .clearfix:after { clear: both; }
 .clearfix { zoom: 1; }
+
+/* VIC CHANGE */
+ul {
+	text-transform:uppercase;
+}
+
+#container img {
+	width:150px;
+	padding:5%;
+}
