@@ -13,8 +13,20 @@
 		  <a href="#" id="newsletterButton" class="btn btn-success newsletter">Submit</a>
 		</form>
 	</article>	
-	<article class="col-lg-6 vipBackground">
-		
-	
+	<article class="col-lg-6">
+		<img src="img/vip_bg.png" alt="vip" class="img-responsive vipClub">
 	</article>
-	
+	<script>
+		//form submit
+$("#newsletterButton").click(function(e){
+	e.preventDefault();
+  $.post("welcome.php",
+  {
+    email:$("#exampleInputEmail1").val(),
+    name:$("#exampleInputText1").val()
+  },
+  function(data,status){
+    $(".contentPhp").html(data);
+  });
+});
+	</script>

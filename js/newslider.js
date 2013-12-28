@@ -6,7 +6,7 @@
 
         var defaults = {
             maxHeight : 658,
-            minHeight : 450,
+            minHeight : 360,
             delay : 5000,
             transition : 1000,
             maxFont : 36,

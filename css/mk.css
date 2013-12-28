@@ -14,26 +14,7 @@ footer{
 	background-color:#000000;
 }
 
-#controler{
-	position:fixed;
-	right:20px;
-	bottom:0px;
-	z-index:10000;
-}
 
-.fixed{
-	position: fixed;
-	top:0px;
-	left:0px;
-	z-index:10000;
-	width:100%;
-	margin:0px;
-}
-
-html{
-	overflow-x:hidden;
-	overflow-y:scroll;
-}
 
 /* style navigation back to top button */
 .navigationTop{
@@ -50,15 +31,12 @@ html{
 }
 
 /* style VIP-content */
-.vipBackground{
-	background-image:url("../img/vip_bg.png");
-	background-repeat:no-repeat;
+.vipClub{
+	float:right;
 }
 
 /* buy button */
-.buybutton {
-	margin:5px 25px;
-}
+
 
 .buybutton a{
 	text-decoration:none !important;
@@ -68,12 +46,16 @@ html{
 	margin-top:0px !important;
 }
 
+.rightFrontendimg{
+	overflow:hidden;
+}
+
 /* about.php */
 
 .topSection{
 	background-color:#ffffff;
 }
-/* product menu */
+
 .nav-center{
 	margin:auto;
 	float:none;
@@ -98,20 +80,42 @@ html{
 
 /* styling for single-product page */
 .productVideo{
-	padding-top:20%;
+	padding-top:10%;
 	padding-left:10%;
 }
 
 .topTextProduct h2{
 	font-size:40px;
-	padding-top:20%;
+	padding-top:6%;
+	padding-left:10%;
+}
+
+.topTextProduct h4{
+	font-size:20px;
+	padding-top:6%;
+	padding-left:10%;
+}
+.topTextProduct img{
+	padding-left:10%;
+}
+
+@media all and (max-width: 1100px){
+	.productVideo{
+	padding-top:5%;
+	padding-left:10%;
+}
+
+.topTextProduct h2{
+	font-size:40px;
+	padding-top:5%;
 	padding-left:10%;
 }
 
 .topTextProduct h4{
 	font-size:25px;
-	padding-top:6%;
+	padding-top:2%;
 	padding-left:10%;
+	}
 }
 
 .singleproductMiddle{
@@ -200,13 +204,12 @@ html{
 }
 
 .aboutVisionArea h4{
-	font-size:18px;
-	padding-top:6%;
-	padding-left:10%;
+	font-size:14px;
 }
 
 .inline-text{
-	font-size:20px;
+	font-size:18px;
+	padding-left:10%;
 }
 
 .teampart {
@@ -228,4 +231,82 @@ html{
 		margin:0px;
 		width:100%;
 	}
+}
+/* buy page */
+
+.dealer{
+	cursor:pointer;
+}
+
+.countryStyling{
+    background-color: #666666;
+    color: #FFFFFF;
+    margin: 10px 0px;
+}
+
+.topFlagBuy{
+	margin-bottom:10px;
+}
+
+/* hover effect on front page content boxes */
+
+.contentImg{
+		-webkit-filter: grayscale(100%); 
+		-moz-filter: grayscale(100%); 
+		-o-filter: grayscale(100%); 
+		-ms-filter: grayscale(100%); 
+		filter: grayscale(100%);
+}
+
+.contentImg:hover{
+	-webkit-filter: grayscale(0); 
+		-moz-filter: grayscale(0); 
+		-o-filter: grayscale(0); 
+		-ms-filter: grayscale(0); 
+		filter: grayscale(0);
+}
+
+/* top section margin */
+.slider1{
+	margin-bottom:20px;
+}
+
+/* slideshow */
+.singleProductReview{
+	margin:20px 0px;
+}
+
+/*nav bar styling */
+@media all and (max-width: 2000px) and (min-width: 1050px) {
+	.navbar-right{
+		margin-top:35px;
+	}
+	.buybutton{
+		bottom:7px;
+	}
+}
+
+
+footer{
+	margin-top:20px;
+}
+
+footer .socialButtons {
+    float: left;
+    margin: 10px;
+}
+
+/*instagram */
+.aboutVisionArea{
+	margin-bottom:20px;
+}
+
+/* soundcloud widget styling */
+.widgetContainer{
+	margin:3%;  
+}
+
+/* buy page */
+.topFlagBuy{
+	margin:20px 0px;
 }

@@ -323,12 +323,12 @@ hr {
   clip: rect(0, 0, 0, 0);
   border: 0;
 }
-@media (max-width: 992px) {
+@media (max-width: 1100px) {
   .mobileHidden {
     display: none;
   }
 }
-@media (min-width: 992px) {
+@media (min-width: 1100px) {
   .mobileShow {
     display: none;
   }
@@ -336,9 +336,12 @@ hr {
 .slide-nav {
   display: none;
 }
-@media (min-width: 768px) {
-  .middleContainer {
-    margin: 15px 0px ;
+.middleContainer {
+  margin: 15px 0px ;
+}
+@media (max-width: 992px) {
+  .navigationTop {
+    display: none;
   }
 }
 .centerheader {
@@ -352,13 +355,13 @@ hr {
   margin: auto;
 }
 .vip-headline {
-  color: #5b3470;
-  border-top: 1px solid #5b3470;
-  border-bottom: 1px solid #5b3470;
+  color: #765c83;
+  border-top: 1px solid #765c83;
+  border-bottom: 1px solid #765c83;
   display: inline-block;
 }
 .teamheadline {
-  margin-top: 20%;
+  margin-top: 13%;
   margin-left: 10%;
 }
 @media (max-width: 992px) {
@@ -371,6 +374,7 @@ hr {
 }
 .teambutton {
   margin: 5% 10%;
+  float: right;
 }
 footer {
   background-color: #000000;
@@ -383,6 +387,9 @@ footer p {
 }
 .footerFirstContent {
   margin-left: 15px;
+}
+.tester {
+  cursor: pointer;
 }
 h1,
 h2,
@@ -1972,7 +1979,7 @@ textarea.input-lg {
 }
 .btn:hover,
 .btn:focus {
-  color: #333333;
+  color: #000000;
   text-decoration: none;
 }
 .btn:active,
@@ -2002,9 +2009,9 @@ fieldset[disabled] .btn {
 .btn-default:active,
 .btn-default.active,
 .open .dropdown-toggle.btn-default {
-  color: #333333;
-  background-color: #ebebeb;
-  border-color: #adadad;
+  color: #765c83;
+  background-color: #dcdcdc;
+  border-color: #765c83;
 }
 .btn-default:active,
 .btn-default.active,
@@ -2043,9 +2050,9 @@ fieldset[disabled] .btn-default.active {
 .btn-primary:active,
 .btn-primary.active,
 .open .dropdown-toggle.btn-primary {
-  color: #ffffff;
-  background-color: #3276b1;
-  border-color: #285e8e;
+  color: #765c83;
+  background-color: #dcdcdc;
+  border-color: #765c83;
 }
 .btn-primary:active,
 .btn-primary.active,
@@ -2084,9 +2091,9 @@ fieldset[disabled] .btn-primary.active {
 .btn-warning:active,
 .btn-warning.active,
 .open .dropdown-toggle.btn-warning {
-  color: #ffffff;
-  background-color: #ed9c28;
-  border-color: #d58512;
+  color: #765c83;
+  background-color: #dcdcdc;
+  border-color: #765c83;
 }
 .btn-warning:active,
 .btn-warning.active,
@@ -2125,9 +2132,9 @@ fieldset[disabled] .btn-warning.active {
 .btn-danger:active,
 .btn-danger.active,
 .open .dropdown-toggle.btn-danger {
-  color: #ffffff;
-  background-color: #d2322d;
-  border-color: #ac2925;
+  color: #765c83;
+  background-color: #dcdcdc;
+  border-color: #765c83;
 }
 .btn-danger:active,
 .btn-danger.active,
@@ -2158,17 +2165,17 @@ fieldset[disabled] .btn-danger.active {
 }
 .btn-success {
   color: #ffffff;
-  background-color: #917aaa;
-  border-color: #846aa0;
+  background-color: #765c83;
+  border-color: #695174;
 }
 .btn-success:hover,
 .btn-success:focus,
 .btn-success:active,
 .btn-success.active,
 .open .dropdown-toggle.btn-success {
-  color: #ffffff;
-  background-color: #7c6299;
-  border-color: #66507d;
+  color: #765c83;
+  background-color: #dcdcdc;
+  border-color: #765c83;
 }
 .btn-success:active,
 .btn-success.active,
@@ -2190,11 +2197,11 @@ fieldset[disabled] .btn-success:active,
 .btn-success.disabled.active,
 .btn-success[disabled].active,
 fieldset[disabled] .btn-success.active {
-  background-color: #917aaa;
-  border-color: #846aa0;
+  background-color: #765c83;
+  border-color: #695174;
 }
 .btn-success .badge {
-  color: #917aaa;
+  color: #765c83;
   background-color: #fff;
 }
 .btn-info {
@@ -2207,9 +2214,9 @@ fieldset[disabled] .btn-success.active {
 .btn-info:active,
 .btn-info.active,
 .open .dropdown-toggle.btn-info {
-  color: #ffffff;
-  background-color: #39b3d7;
-  border-color: #269abc;
+  color: #765c83;
+  background-color: #dcdcdc;
+  border-color: #765c83;
 }
 .btn-info:active,
 .btn-info.active,
@@ -2260,7 +2267,7 @@ fieldset[disabled] .btn-link {
 }
 .btn-link:hover,
 .btn-link:focus {
-  color: #2a6496;
+  color: #000000;
   text-decoration: underline;
   background-color: transparent;
 }
@@ -3675,7 +3682,6 @@ textarea.input-group-sm > .input-group-btn > .btn {
 @media (max-width: 768px) {
   .navbar-header {
     float: left;
-    width: 100%;
   }
 }
 .navbar-collapse {
@@ -3781,6 +3787,11 @@ textarea.input-group-sm > .input-group-btn > .btn {
 .navbar-brand:focus {
   text-decoration: none;
 }
+@media (min-width: 768px+1) and (max-width: 1050px) {
+  .navbar-brand .navbar-brand {
+    width: 100%;
+  }
+}
 @media (min-width: 768px) {
   .navbar > .container .navbar-brand {
     margin-left: -15px;
@@ -3852,9 +3863,6 @@ textarea.input-group-sm > .input-group-btn > .btn {
   }
   .navbar-nav > li > a {
     margin-top: 15px;
-  }
-  .navbar-nav.navbar-right:last-child {
-    margin-right: -15px;
   }
 }
 @media (min-width: 768px) {
@@ -3963,7 +3971,7 @@ textarea.input-group-sm > .input-group-btn > .btn {
 }
 .navbar-default {
   background-color: #000000;
-  opacity: 0.6;
+  opacity: 0.9;
   transition: all 1s ease;
   -webkit-transition: all 1s ease;
   /* Safari */
@@ -3974,29 +3982,27 @@ textarea.input-group-sm > .input-group-btn > .btn {
 }
 .navbar-default .navbar-brand:hover,
 .navbar-default .navbar-brand:focus {
-  color: #5b3470;
+  color: #765c83;
 }
 .navbar-default .navbar-text {
   color: #777777;
 }
 .navbar-default .navbar-nav > li > a {
   color: #ffffff;
-  border-bottom: 1px solid #ffffff;
-  border-top: 1px solid #ffffff;
   margin-left: 17px;
   margin-right: 5px;
   background-clip: content-box;
 }
 .navbar-default .navbar-nav > li > a:hover,
 .navbar-default .navbar-nav > li > a:focus {
-  color: #5b3470;
-  border-bottom: 2px solid #5b3470;
+  color: #ffffff;
+  border-bottom: 2px solid #ffffff;
 }
 .navbar-default .navbar-nav > .active > a,
 .navbar-default .navbar-nav > .active > a:hover,
 .navbar-default .navbar-nav > .active > a:focus {
-  color: #5b3470;
-  border-bottom: 2px solid #5b3470;
+  color: #ffffff;
+  border-bottom: 2px solid #ffffff;
 }
 .navbar-default .navbar-nav > .disabled > a,
 .navbar-default .navbar-nav > .disabled > a:hover,
@@ -4112,7 +4118,7 @@ textarea.input-group-sm > .input-group-btn > .btn {
 }
 .navbar-inverse .navbar-brand:hover,
 .navbar-inverse .navbar-brand:focus {
-  color: #5b3470;
+  color: #765c83;
 }
 .navbar-inverse .navbar-text {
   color: #999999;
@@ -4122,12 +4128,12 @@ textarea.input-group-sm > .input-group-btn > .btn {
 }
 .navbar-inverse .navbar-nav > li > a:hover,
 .navbar-inverse .navbar-nav > li > a:focus {
-  color: #5b3470;
+  color: #765c83;
 }
 .navbar-inverse .navbar-nav > .active > a,
 .navbar-inverse .navbar-nav > .active > a:hover,
 .navbar-inverse .navbar-nav > .active > a:focus {
-  color: #5b3470;
+  color: #765c83;
 }
 .navbar-inverse .navbar-nav > .disabled > a,
 .navbar-inverse .navbar-nav > .disabled > a:hover,
@@ -4184,10 +4190,10 @@ textarea.input-group-sm > .input-group-btn > .btn {
   }
 }
 .navbar-inverse .navbar-link {
-  color: #5b3470;
+  color: #765c83;
 }
 .navbar-inverse .navbar-link:hover {
-  color: #5b3470;
+  color: #765c83;
 }
 .breadcrumb {
   padding: 8px 15px;
@@ -4391,11 +4397,11 @@ textarea.input-group-sm > .input-group-btn > .btn {
   background-color: #3071a9;
 }
 .label-success {
-  background-color: #917aaa;
+  background-color: #765c83;
 }
 .label-success[href]:hover,
 .label-success[href]:focus {
-  background-color: #775e93;
+  background-color: #5b4765;
 }
 .label-info {
   background-color: #5bc0de;
@@ -4640,7 +4646,7 @@ a.thumbnail.active {
   animation: progress-bar-stripes 2s linear infinite;
 }
 .progress-bar-success {
-  background-color: #917aaa;
+  background-color: #765c83;
 }
 .progress-striped .progress-bar-success {
   background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
@@ -5525,12 +5531,9 @@ button.close {
 }
 .carousel-caption {
   position: absolute;
-  top: 30%;
-  right: 1%;
-  bottom: 20px;
+  right: 20%;
+  bottom: 9%;
   z-index: 10;
-  padding-top: 20px;
-  padding-bottom: 20px;
   color: #ffffff;
   text-align: center;
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);

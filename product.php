@@ -11,11 +11,9 @@
   <!-- Collect the nav links, forms, and other content for toggling -->
 
     <ul id="filters" class="nav navbar-nav nav-center aboutmenu"> 
-    	<li class="rightMenu"><a data-filter=".acc" id="acc" href="#">Accessories</a></li>    
-	  <li class="rightMenu"><a data-filter=".amp" id="amp" href="#">Amplifiers</a></li>
-       <li class="active rightMenu"><a data-filter=".pedal" id="pedal" href="#">Pedal</a></li>
-      
-      
+		<li class="rightMenu"><a data-filter=".acc" id="acc" href="#">Accessories</a></li>    
+		<li class="rightMenu"><a data-filter=".amp" id="amp" href="#">Amplifiers</a></li>
+		<li class="active rightMenu"><a data-filter=".pedal" id="pedal" href="#">Pedals</a></li>
     </ul>
 </nav>
 <section class="active menu pedal">
@@ -24,12 +22,11 @@
  
 
   <!-- Collect the nav links, forms, and other content for toggling -->
-  <!--VIC CHANGE -->
     <ul id="filters" class="nav navbar-nav nav-center aboutmenuSub headerline">
       <li><a href="#" data-filter="*">all</a></li>
       <li><a href="#" data-filter=".pro">pro-series</a></li>
 	  <li><a href="#" data-filter=".vintage">vintage series</a></li>
-      <li><a href="#" data-filter=".distortion">distorstion</a></li>
+      <li><a href="#" data-filter=".distortion">distortion</a></li>
       <li><a href="#" data-filter=".delay">delay</a></li>
       <li><a href="#" data-filter=".reverb">reverb</a></li>
       <li><a href="#" data-filter=".modulation">modulation</a></li>
@@ -90,7 +87,6 @@
 <article id="container">
      <a href="singleproduct.php"><div class="item pro delay pedal"><img src="img/ac_tone.jpg"/></div></a> 
      <a href="singleproduct.php"><div class="item pro pedal" ><img src="img/grey.png"/></div></a> 
-   <a href="singleproduct.php"><div class="item pro pedal"><img src="img/bass_driv.png"/></div></a>
      <a href="singleproduct.php"><div class="item pro pedal"><img src="img/compressor.png"/></div></a>
      <a href="singleproduct.php"><div class="item pro pedal"><img src="img/the_fuzz.png"/></div></a>
     <a href="singleproduct.php"><div class="item pro delay pedal" ><img src="img/contour.png"/></div></a>
